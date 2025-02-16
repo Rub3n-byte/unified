@@ -1,0 +1,6 @@
+bin/
+include/python3.13
+lib/
+lib64/
+index.html
+pyenv.cfg
