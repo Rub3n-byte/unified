@@ -3,4 +3,7 @@ include/python3.13
 lib/
 lib64/
 index.html
-pyenv.cfg
+pyvenv.cfg
+lib64
+instalation.py
+.gitignore
