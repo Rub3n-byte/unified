@@ -7,3 +7,4 @@ pyvenv.cfg
 lib64
 instalation.py
 .gitignore
+qbittorrent-nox.sh

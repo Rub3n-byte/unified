@@ -1,8 +1,8 @@
 #!/bin/bash
-apk add samba --no-cache
-dialog --yesno "Samba installed!. Do you want to configure it now?" 30 30
-config=$?
-if [[ $config -eq 0 ]]; then
-    dialog --inputbox "Enter the name of the shared folder: " 30 30 
-    path_folder=$?
-    mkdir -p $path_folder
+read -p "Please enter the name of the shared folder: " path_folder
+if [[ ls $path_folder ]]; then
+    echo "The folder already exists"
+else
+    mkdir $path_folder
+    echo "The folder has been created"
+fi
