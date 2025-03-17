@@ -1,8 +1,8 @@
 #!/bin/bash
 apk add --no-cache rclone
-dialog --yesno "Rclone installed!. Do you want to configure it now?" 30 30
+dialog --yesno "Rclone installed!. Do you want to configure it now?" 0 0
 config=$?
-dialog --yesno "Rclone installed!. Do you want to install a WebGUI?" 30 30
+dialog --yesno "Rclone installed!. Do you want to install a WebGUI?" 0 0
 webgui=$?
 if [[ $webgui -eq 0 ]]; then
     apk add --no-cache rclone-browser
